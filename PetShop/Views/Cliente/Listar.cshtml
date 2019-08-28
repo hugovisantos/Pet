@@ -1,0 +1,19 @@
+﻿@model PetShop.ViewModels.ClienteViewModel
+
+<div class="container">
+    <div class="row">
+        <div class="alert alert-success">
+
+        </div>
+        <div class="col-sm-12">
+
+            @foreach (var item in Model.Clientes)
+            {
+                <div>
+                    @item.Id - @item.Name - @item.Email <a href="~/cliente/detalhe">detalhe</a>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

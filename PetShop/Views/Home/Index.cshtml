@@ -1,0 +1,25 @@
+﻿@model PetShop.ViewModels.HomeViewModel
+
+<div class="container">
+    <div class="row">
+        <div class="alert alert-success">
+            @Model.NomeUsuario
+        </div>
+        <div class="col-sm-12">
+
+            <table>
+                @foreach (var item in Model.Pet)
+                {
+                    <tr>
+                        <td>
+                            @item.Name -
+                        </td>
+                    </tr>
+
+
+                }
+            </table>
+
+        </div>
+    </div>
+</div>

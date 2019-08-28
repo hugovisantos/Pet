@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="~/home/index">Home</a></li>
+                    <li><a href="~/cliente/listar">Cliente</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <hr />
+    <hr />
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+
+
+
+
+</body>
+</html>
